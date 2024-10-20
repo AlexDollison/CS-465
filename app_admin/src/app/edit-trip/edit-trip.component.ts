@@ -51,7 +51,7 @@ ngOnInit() : void{
     description: ['', Validators.required]
   })
       
-  this.tripDataService.getTrip(tripCode)
+  this.tripDataService.getTrips(tripCode)
     .subscribe({
       next: (value: any) => {
         this.trip = value;
